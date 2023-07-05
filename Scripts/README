@@ -5,3 +5,11 @@ Requires  - NACCESS
           - DockQ 
           - Jwalk (v 2.1)
           - pymol (2.3.4)
+
+Scripts are ran 1 to 13, sequentially. Ideally, you wont find any issues. But if you do, please contact: gilberto.pereiraportugal@gmail.com
+
+Additional info: The pymol align script can also be turned into a VMD alignment and you will get basically the same result.
+The unbound monomers + ligands are superimposed on top of the predicted structure and then they are deleted, leaving the ligands in the pocket but without touching the coordinates of the solution. 
+The idea is that the ligands (WARHEAD and RECRUITER) are transplanted to each predicted structure by aligning the monomers to the predictions using the C-alphas.
+
+For Jwalk, we selected the anchor atom on each ligand AND we renamed that atom to CA (because Jwalk builds crosslinks between C-alphas of residues (LYS, TYR, THR, etc..) and used vox = 2 for efficiency (default is 1). 
