@@ -15,7 +15,7 @@
 #                                    Ligase.pdb is the ligand-free receptor protein,
 #                                    Target.pdb is the ligand-free target protein,
 #                                    -g is the number of individual local dockings per swarm (initial positions where local docking is restricted to)
-#                                    -r pecifies the restraint file given to bias the docking algorithm
+#                                    -r specifies the restraint file given to bias the docking algorithm
 #                                    -s is the number of local swarms to produce (if not set, the algorihtm chooses a number that appropriately covers the surface of ther receptor)
 #                                    Other options are possible but we did not test them (such as ANM for normal mode-based flexibility)
 #
