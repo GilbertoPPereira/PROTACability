@@ -34,7 +34,7 @@
 #
 #      It goes inside each swarm: 
 #
-“      cd swarm_${i}; lgd_generate_conformations.py ../4G6M_rec.pdb ../4G6M_lig.pdb  gso_100.out 200 > /dev/null 2> /dev/null;" >> generate_lightdock.list”
+“     echp "cd swarm_${i}; lgd_generate_conformations.py ../4G6M_rec.pdb ../4G6M_lig.pdb  gso_100.out 200 > /dev/null 2> /dev/null;" >> generate_lightdock.list”
 #
 #      and then assigns to each core one of these jobs
 #      “ant_thony.py -c ${CORES} generate_lightdock.list” , meaning that each swarm is treated individually in each core.
