@@ -1,0 +1,7 @@
+This folder containts all the scripts. They are based on bash and some python snipets.
+Requires  - NACCESS
+          - LIGHTDOCK (v 0.9.2_post1)
+          - VOROMQA (v 1.21)
+          - DockQ 
+          - Jwalk (v 2.1)
+          - pymol (2.3.4)
