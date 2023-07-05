@@ -1,0 +1,1 @@
+lightdock3_setup.py ligase.pdb target.pdb -g 200 --noxt --now --noh -rst rest.dat --verbose_parser
