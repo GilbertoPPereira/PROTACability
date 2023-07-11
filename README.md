@@ -1,4 +1,4 @@
-# Tutorial on how to use scripts from PROTAC paper
+# Tutorial on how to use scripts from the manuscript "Rational prediction of PROTAC compatible ligase-target interfaces"  
 
 To run the scripts, you will need to use:
 
