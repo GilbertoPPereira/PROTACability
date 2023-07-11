@@ -11,15 +11,15 @@ NACCESS: http://www.bioinf.manchester.ac.uk/naccess/
 PyMol: version 2.3.4
 
 ### Step 0 - Get the automatic restraints 
-       0.1 - Uses MDAnalysis to produce a file with only residues within X of the ligand and the ligand
-       0.2 - uses naccess to get the dASA (delta SASA) for all residues by comparing the environemnt within the structure and a hypothetial gly-X-gly tripeptide.
-       0.3 - Selects only those residues whose dASA > 25 % (tunable but typically a reference value) and within 6A of ligand.
+0.1 - Uses MDAnalysis to produce a file with only residues within X of the ligand and the ligand
+0.2 - uses naccess to get the dASA (delta SASA) for all residues by comparing the environemnt within the structure and a hypothetial gly-X-gly tripeptide.
+0.3 - Selects only those residues whose dASA > 25 % (tunable but typically a reference value) and within 6A of ligand.
 
-  This step produces a list of restraints for a given protein in a .txt file. We then need to convert it from that file to a .txt file readable by LightDock
+This step produces a list of restraints for a given protein in a .txt file. We then need to convert it from that file to a .txt file readable by LightDock
 
 ### Step 1 - Docking using LightDock
-#### Step 1.1 -  Setup the simulation: "lightdock3_setup.py ligase.pdb target.pdb -g 200 --noxt --now --verbose_parser --noh -r rest.dat"
-                                     Ligase.pdb is the ligand-free receptor protein,
+#### Step 1.1 -  Setup the simulation: "lightdock3_setup.py ligase.pdb target.pdb -g 200 --noxt --now --verbose_parser --noh -r rest.dat"                                   
+				     Ligase.pdb is the ligand-free receptor protein,
                                      Target.pdb is the ligand-free target protein,
                                      -g is the number of individual local dockings per swarm (initial positions where local docking is restricted to)
                                      -r specifies the restraint file given to bias the docking algorithm
