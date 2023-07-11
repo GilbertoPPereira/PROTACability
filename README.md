@@ -2,13 +2,13 @@
 
 To run the scripts, you will need to use:
 
-Lightdock: https://github.com/lightdock/lightdock/releases/tag/0.9.2
-DockQ: https://github.com/bjornwallner/DockQ 
-VoroMQA: https://github.com/kliment-olechnovic/voronota
-Jwalk: https://github.com/Topf-Lab/XLM-Tools
-ProFit: http://www.bioinf.org.uk/software/profit/ 
-NACCESS: http://www.bioinf.manchester.ac.uk/naccess/
-PyMol: version 2.3.4
+    Lightdock: https://github.com/lightdock/lightdock/releases/tag/0.9.2
+    DockQ: https://github.com/bjornwallner/DockQ 
+    VoroMQA: https://github.com/kliment-olechnovic/voronota
+    Jwalk: https://github.com/Topf-Lab/XLM-Tools
+    ProFit: http://www.bioinf.org.uk/software/profit/ 
+    NACCESS: http://www.bioinf.manchester.ac.uk/naccess/
+    PyMol: version 2.3.4
 
 ### Step 0 - Get the automatic restraints 
 > 0.1 - Uses MDAnalysis to produce a file with only residues within X of the ligand and the ligand
